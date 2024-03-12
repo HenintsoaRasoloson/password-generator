@@ -1,19 +1,12 @@
+@charset "UTF-8";
 /* You can add global styles to this file, and also import other style files */
-// @import "ngx-toastr/toastr.css";
-
 body {
   margin: 0;
   padding: 0;
 }
 
-// variables
-$border-radius: 10px;
-$border-bg-color: #fefcfb;
-$main-color: #034078;
-// $main-color: #007cff;
-
 /* Pour les cases à cocher non cochées */
-input[type="checkbox"] {
+input[type=checkbox] {
   -webkit-appearance: none; /* Supprimez l'apparence par défaut */
   -moz-appearance: none;
   appearance: none;
@@ -27,21 +20,22 @@ input[type="checkbox"] {
 }
 
 /* Pour les cases à cocher cochées */
-input[type="checkbox"]:checked {
-  background-color: $main-color; /* Couleur de fond lorsque cochée */
+input[type=checkbox]:checked {
+  background-color: #034078; /* Couleur de fond lorsque cochée */
 }
 
 /* Pour le symbole de coche */
-input[type="checkbox"]::before {
-  content: "\2713"; /* Caractère Unicode pour la coche (✓) */
+input[type=checkbox]::before {
+  content: "✓"; /* Caractère Unicode pour la coche (✓) */
   font-size: 14px; /* Taille de la police */
   color: #fff; /* Couleur de la coche */
   display: block;
   text-align: center;
   line-height: 18px; /* Ajustement de la ligne pour le centrage vertical */
 }
+
 /* Pour la piste */
-input[type="range"] {
+input[type=range] {
   width: 100%; /* Largeur de la piste */
   height: 8px; /* Hauteur de la piste */
   background-color: #cacaca; /* Couleur de la piste */
@@ -50,11 +44,11 @@ input[type="range"] {
 }
 
 /* Pour le curseur */
-input[type="range"]::-webkit-slider-thumb {
+input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none; /* Supprimez l'apparence par défaut */
   width: 16px; /* Largeur du curseur */
   height: 16px; /* Hauteur du curseur */
-  background-color: $main-color; /* Couleur du curseur */
+  background-color: #034078; /* Couleur du curseur */
   border-radius: 50%; /* Arrondi le curseur pour en faire un cercle */
   cursor: pointer; /* Curseur pointer */
 }

@@ -1,0 +1,91 @@
+<div class="main-section">
+  <div class="generator-section">
+    <div class="title">
+      <h1>Générateur de mot de passe</h1>
+      <p class="subtitle">
+        Votre sécurité est notre priorité. Avec notre générateur de mots de
+        passe robuste et fiable, vous pouvez avoir confiance en la création de
+        mots de passe sécurisés pour protéger vos informations sensibles.
+      </p>
+    </div>
+    <div class="generate-container">
+      <div class="form-control">
+        <label>Longueur </label>
+        <input
+          type="range"
+          [min]="characterLengthMin"
+          [max]="characterLengthMax"
+          [(ngModel)]="characterLength"
+          name="characterLength" />
+        <span class="length-value"> {{ characterLength }}</span>
+      </div>
+      <div class="form-control">
+        <label>Minuscule (a-z)</label>
+        <input
+          type="checkbox"
+          [(ngModel)]="useSmallLetters"
+          name="useSmallLetters" />
+      </div>
+      <div class="form-control">
+        <label>Majuscule (A - Z)</label>
+        <input
+          type="checkbox"
+          [(ngModel)]="useCapitalLetters"
+          name="useCapitalLetters" />
+      </div>
+      <div class="form-control">
+        <label>Caracères spéciaux (!#$%&...)</label>
+        <input
+          type="checkbox"
+          [(ngModel)]="useSpecialChar"
+          name="useSpecialChar" />
+      </div>
+      <div class="form-control">
+        <label>Nombre (0-9)</label>
+        <input type="checkbox" [(ngModel)]="useNumber" name="useNumber" />
+      </div>
+    </div>
+    <div class="result-container">
+      <div class="result-panel">
+        {{ generatedString }}
+      </div>
+      <div class="action-refresh">
+        <button title="Générer" (click)="onSubmit()">
+          <i class="fa-solid fa-caret-right"></i>
+        </button>
+      </div>
+
+      <div class="action-copy">
+        <button
+          title="Copier"
+          (click)="copyToClipboard()"
+          [disabled]="!generatedString"
+          [ngClass]="{ disabled: !generatedString }">
+          <i class="fas w200 fa-copy"></i>
+        </button>
+      </div>
+    </div>
+    <div class="secure-icons">
+      <div><i class="fa fa-lock"></i> Sécurité Garantie</div>
+      <div><i class="fa fa-balance-scale"></i> Respect de la vie privée</div>
+      <div><i class="fa fa-eye-slash"></i> Pas de suivi de données</div>
+    </div>
+    <div class="social-network">
+      <a href="https://www.linkedin.com/in/henintsoa-rasoloson" target="_blank">
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/color/48/linkedin.png"
+          alt="linkedin"
+      /></a>
+      <a href="https://github.com/HenintsoaRasoloson" target="_blank">
+        <img
+          width="48"
+          height="48"
+          src="https://img.icons8.com/ios-filled/50/github.png"
+          alt="github"
+      /></a>
+    </div>
+  </div>
+  <!-- <div class="img-section"></div> -->
+</div>
