@@ -29,7 +29,7 @@ Une fois l'application ouverte dans votre navigateur, vous pouvez personnaliser 
 
 ## Captures d'écran
 
-![Capture d'écran de l'application](screenshots/screenshot.png)
+![Capture d'écran de l'application](src\assets\screenshots\screenshot.png)
 
 ## Contributions
 
