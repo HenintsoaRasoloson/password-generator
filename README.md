@@ -1,27 +1,40 @@
-# PasswordGenerator
+# Générateur de mots de passe sécurisés
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+Ce projet est un générateur de mots de passe sécurisés développé avec Angular. Il permet aux utilisateurs de générer des mots de passe aléatoires en fonction de certains critères, tels que la longueur du mot de passe et les types de caractères à inclure.
 
-## Development server
+## Versions utilisées
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- Angular CLI: 17.2.3
+- Node.js: 18.16.1
+- npm: 9.5.1
 
-## Code scaffolding
+## Fonctionnalités
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Génération de mots de passe aléatoires.
+- Personnalisation de la longueur et des caractères du mot de passe.
+- Copie facile du mot de passe généré dans le presse-papiers.
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Pour utiliser l'application localement, suivez ces étapes :
 
-## Running unit tests
+1. Clonez ce dépôt sur votre machine locale.
+2. Assurez-vous d'avoir Node.js et npm installés.
+3. Exécutez `npm install` pour installer les dépendances du projet.
+4. Exécutez `ng serve` pour lancer l'application. Naviguez vers `http://localhost:4200/` dans votre navigateur pour l'ouvrir.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Utilisation
 
-## Running end-to-end tests
+Une fois l'application ouverte dans votre navigateur, vous pouvez personnaliser les paramètres du mot de passe à générer à l'aide des options disponibles. Cliquez sur le bouton "Générer" pour obtenir un nouveau mot de passe, puis utilisez le bouton "Copier" pour copier le mot de passe dans le presse-papiers.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Captures d'écran
 
-## Further help
+![Capture d'écran de l'application](screenshots/screenshot.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Contributions
+
+Les contributions sont les bienvenues ! Si vous souhaitez contribuer à ce projet, veuillez créer une pull request avec vos modifications.
+
+## Licence
+
+Ce projet est sous licence MIT. Pour plus d'informations, consultez le fichier [LICENSE](LICENSE).
