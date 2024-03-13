@@ -81,7 +81,7 @@ button.disabled {
 }
 .main-section > div {
   box-sizing: border-box;
-  width: 40vw;
+  min-width: 40vw;
   min-height: 60vh;
 }
 .main-section .img-section {
@@ -148,6 +148,11 @@ button.disabled {
   padding-inline: 1rem;
 }
 
+@media screen and (max-width: 768px) {
+  .main-section {
+    height: unset;
+  }
+}
 .result-container {
   display: flex;
   justify-content: space-between;
