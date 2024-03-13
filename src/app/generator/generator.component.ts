@@ -50,7 +50,6 @@ export class GeneratorComponent {
       this.useNumber,
       this.useSpecialChar
     );
-    console.log(this.generatedString);
   }
 
   async copyToClipboard() {
